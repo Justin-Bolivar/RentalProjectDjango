@@ -9,3 +9,7 @@ class FriendViewSet(viewsets.ModelViewSet):
 class BelongingViewSet(viewsets.ModelViewSet):
     queryset = models.Belonging.objects.all()
     serializer_class = serializers.BelongingSerializer
+
+class BorrowedViewSet(viewsets.ModelViewSet):
+    queryset = models.Borrowed.objects.all()
+    serializer_class = serializers.BorrowedSerializer
